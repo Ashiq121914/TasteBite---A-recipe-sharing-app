@@ -8,6 +8,60 @@
   </head>
   <body>
     <!-- Navbar start-->
+    <section class="navbar-section">
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <!-- search input -->
+      <div class="search-input-outside hide" id="search-input-outside">
+        <input
+          type="text"
+          class="search-input"
+          id="searchInput"
+          placeholder="Search"
+        />
+        <div class="close-icon" id="closeIcon" onclick="toggleSearchRemove()">
+          x
+        </div>
+      </div>
+      <nav class="navbar" id="navbar">
+        <div class="navbar-logo">
+          <img src="./asset/logo.svg" alt="" />
+        </div>
+        <div class="navbar-link">
+          <ul>
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">Recipe Page</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-search-profile">
+          <div class="search-container" id="search-container">
+            <svg
+              class="search-icon"
+              onclick="toggleSearchAdd()"
+              id="searchIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26.667"
+              height="26.667"
+              viewBox="0 0 26.667 26.667"
+            >
+              <path
+                d="M24.39,26.276l-4.9-4.9a12.012,12.012,0,1,1,1.885-1.885l4.9,4.9a1.334,1.334,0,0,1-1.886,1.886ZM2.666,12a9.329,9.329,0,0,0,15.827,6.7,1.338,1.338,0,0,1,.206-.206A9.332,9.332,0,1,0,2.666,12Z"
+              ></path>
+            </svg>
+          </div>
+          <svg
+            class="profile-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M256 73.825a182.175 182.175 0 1 0 182.18 182.18A182.177 182.177 0 0 0 256 73.825zm0 71.833a55.05 55.05 0 1 1-55.054 55.046A55.046 55.046 0 0 1 256 145.658zm.52 208.723h-80.852c0-54.255 29.522-73.573 48.885-90.906a65.68 65.68 0 0 0 62.885 0c19.363 17.333 48.885 36.651 48.885 90.906z"
+              data-name="Profile"
+            />
+          </svg>
+        </div>
+      </nav>
+    </section>
     <!-- Navbar End-->
 
     <!-- Banner start -->
